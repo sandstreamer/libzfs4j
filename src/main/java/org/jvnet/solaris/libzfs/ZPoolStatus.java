@@ -44,6 +44,7 @@ public enum ZPoolStatus {
 	ZPOOL_STATUS_IO_FAILURE_WAIT("One or more devices are faulted in response to IO failures.","Make sure the affected devices are connected, then run 'zpool clear'."),	/* failed I/O, failmode 'wait' */
 	ZPOOL_STATUS_IO_FAILURE_CONTINUE("One or more devices are faulted in response to IO failures.","Make sure the affected devices are connected, then run 'zpool clear'."), /* failed I/O, failmode 'continue' */
 	ZPOOL_STATUS_BAD_LOG("An intent log record could not be read.\tWaiting for adminstrator intervention to fix the faulted pool.","Either restore the affected device(s) and run 'zpool online',\tor ignore the intent log records by running 'zpool clear'."),		/* cannot read log chain(s) */
+        ZPOOL_STATUS_ERRATA(),		/* informational errata available */
 
     ZPOOL_STATUS_UNSUP_FEAT_READ, /* unsupported features for read */
     ZPOOL_STATUS_UNSUP_FEAT_WRITE, /* unsupported features for write */
